@@ -1,1 +1,23 @@
-<h1>Make your form here</h1>
+<h1>Ye Olde Pirate Form</h1>
+
+<form action="/pirates" method="post">
+  <p><label for="pirate[name]">Name: </label>
+  <input type="text" name="pirate[name]" id="pirate[name]">
+  <p><label for="pirate[weight]">Weight: </label>
+  <input type="text" name="pirate[weight]" id="pirate[weight]">
+  <p><label for="pirate[height]">Height: </label>
+  <input type="text" name="pirate[height]" id="pirate[height]">
+  <p><label for="ship_name_1">First Ship Name: </label>
+  <input type="text" name="pirate[ships][][name]" id="ship_name_1">
+  <p><label for="ship_type_1">First Ship Type: </label>
+  <input type="text" name="pirate[ships][][type]" id="ship_type_1">
+  <p><label for="ship_booty_1">First Ship Booty: </label>
+  <input type="text" name="pirate[ships][][booty]" id="ship_booty_1">
+  <p><label for="ship_name_2">Second Ship Name: </label>
+  <input type="text" name="pirate[ships][][name]" id="ship_name_2">
+  <p><label for="ship_type_2">Second Ship Type: </label>
+  <input type="text" name="pirate[ships][][type]" id="ship_type_2">
+  <p><label for="ship_booty_2">Second Ship Booty: </label>
+  <input type="text" name="pirate[ships][][booty]" id="ship_booty_2">
+  <p><input type="submit" value="Submit Ye Scurvy Dog!">
+</form>
